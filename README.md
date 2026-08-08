@@ -1,1 +1,224 @@
 # lbngoc19
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Tuyển Dụng</title>
+    <style>
+        /* Reset cơ bản */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+        }
+
+        /* Thanh điều hướng */
+        header {
+            background-color: #ffffff;
+            padding: 15px 5%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0056b3;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #555;
+            margin-left: 20px;
+            font-weight: 600;
+        }
+
+        /* Khu vực Tìm kiếm (Hero Section) */
+        .hero {
+            background: linear-gradient(135deg, #0056b3, #0088ff);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .search-box {
+            display: flex;
+            justify-content: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .search-box input {
+            flex: 1;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px 0 0 4px;
+            outline: none;
+            font-size: 16px;
+        }
+
+        .search-box button {
+            padding: 12px 25px;
+            background-color: #ffc107;
+            color: #333;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        /* Danh sách việc làm */
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #222;
+        }
+
+        .job-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: transform 0.2s;
+        }
+
+        .job-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .job-info h3 {
+            color: #0056b3;
+            margin-bottom: 5px;
+        }
+
+        .company {
+            font-weight: 600;
+            color: #555;
+            margin-bottom: 5px;
+        }
+
+        .tags {
+            font-size: 14px;
+            color: #777;
+        }
+
+        .tags span {
+            background: #eef2f7;
+            padding: 3px 8px;
+            border-radius: 4px;
+            margin-right: 5px;
+        }
+
+        .apply-btn {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .apply-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Thanh menu điều hướng -->
+    <header>
+        <div class="logo">JobHub</div>
+        <nav>
+            <a href="#">Trang chủ</a>
+            <a href="#">Việc làm</a>
+            <a href="#">Liên hệ</a>
+        </nav>
+    </header>
+
+    <!-- Khu vực tìm kiếm chính -->
+    <section class="hero">
+        <h1>Tìm Kiếm Công Việc Mơ Ước Của Bạn</h1>
+        <div class="search-box">
+            <input type="text" placeholder="Nhập tên công việc, kỹ năng...">
+            <button>Tìm kiếm</button>
+        </div>
+    </section>
+
+    <!-- Khu vực hiển thị việc làm -->
+    <div class="container">
+        <h2 class="section-title">Việc Làm Nổi Bật</h2>
+
+        <!-- Công việc 1 -->
+        <div class="job-card">
+            <div class="job-info">
+                <h3>Lập Trình Viên Frontend (ReactJS)</h3>
+                <div class="company">Công ty Công nghệ ABC</div>
+                <div class="tags">
+                    <span>📍 Hà Nội</span>
+                    <span>💰 15 - 25 Triệu</span>
+                    <span>🕒 Toàn thời gian</span>
+                </div>
+            </div>
+            <a href="#" class="apply-btn">Ứng tuyển</a>
+        </div>
+
+        <!-- Công việc 2 -->
+        <div class="job-card">
+            <div class="job-info">
+                <h3>Chuyên Viên Giao Diện UX/UI</h3>
+                <div class="company">Agency Sáng Tạo XYZ</div>
+                <div class="tags">
+                    <span>📍 TP. Hồ Chí Minh</span>
+                    <span>💰 Thỏa thuận</span>
+                    <span>🕒 Từ xa (Remote)</span>
+                </div>
+            </div>
+            <a href="#" class="apply-btn">Ứng tuyển</a>
+        </div>
+
+        <!-- Công việc 3 -->
+        <div class="job-card">
+            <div class="job-info">
+                <h3>Chuyên Viên Marketing Kỹ Thuật Số</h3>
+                <div class="company">Tập đoàn Bán lẻ DEF</div>
+                <div class="tags">
+                    <span>📍 Đà Nẵng</span>
+                    <span>💰 12 - 18 Triệu</span>
+                    <span>🕒 Toàn thời gian</span>
+                </div>
+            </div>
+            <a href="#" class="apply-btn">Ứng tuyển</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
